@@ -1,0 +1,39 @@
+.container-third-section{
+    background-color: #553F33;
+    padding-top: 60px;
+}
+.mitski{
+    width: 80vh;
+    padding-left: 800px;
+}
+.title-third-section{
+    color: #D1CFC9;
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 215px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.45px;
+}
+.subtitle-third-section{
+    color: #D1CFC9;
+    text-align: center;
+    font-family: Jura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 23.28px
+}
+.title{
+    position: absolute;
+    left: 300px;
+}
+.section-top{
+    position: relative;
+    display: inline-block;
+}
+.retangulo{
+    width: 100%;
+}
