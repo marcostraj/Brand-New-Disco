@@ -1,4 +1,4 @@
-import './SecondSection.css'
+import './FourthSection.css'
 import Vinil1 from './images/Happier than Ever.png'
 import Vinil2 from './images/Evermore.png'
 import Vinil3 from './images/This is Why.png'
@@ -18,11 +18,11 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const slides = [Vinil1, Vinil2, Vinil3, Vinil4, Vinil5, Vinil6, Vinil7, Vinil8, Vinil9];
 
-function SecondSection() {
+function FourthSection() {
 
   return (
     <>
-      <div className='container-section'>
+      <div className='container-fourth-section'>
         <div className='title-section'>
         <h1 className='title-vinis'>VINIS EM</h1>
         <h2 className='destaque'>Destaque</h2>
@@ -54,4 +54,4 @@ function SecondSection() {
   )
 }
 
-export default SecondSection
+export default FourthSection
