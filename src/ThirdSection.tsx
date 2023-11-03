@@ -7,7 +7,6 @@ import Cowboy from './images/Be the Cowboy.png'
 import Laurel from './images/Laurel Hell.png'
 import Land from './images/The Land.png'
 import Mitski from './images/main mitski.png'
-import Forma from './images/Retangulo2.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -53,7 +52,6 @@ function ThirdSection() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <img className='retangulo' src={Forma} alt="" />
         </div>
       </div>
     </>

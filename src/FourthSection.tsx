@@ -1,13 +1,11 @@
 import './FourthSection.css'
-import Vinil1 from './images/Happier than Ever.png'
-import Vinil2 from './images/Evermore.png'
-import Vinil3 from './images/This is Why.png'
-import Vinil4 from './images/Blue banisters.png'
-import Vinil5 from './images/Haim.png'
-import Vinil6 from './images/The Idler.png'
-import Vinil7 from './images/If i cant have love.png'
-import Vinil8 from './images/The Loneliest Time.png'
-import Vinil9 from './images/Bewithced.png'
+import Tidal from './images/Tidal.png'
+import Pawn from './images/When The Pawn.png'
+import Machine from './images/Machine.png'
+import Idler from './images/The Idler (1).png'
+import Fetch from './images/Fetch.png'
+import Fiona from './images/Fiona Apple.png'
+import Retangulo from './images/RetanguloBrown.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -16,17 +14,26 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const slides = [Vinil1, Vinil2, Vinil3, Vinil4, Vinil5, Vinil6, Vinil7, Vinil8, Vinil9];
+const slides = [Tidal, Pawn, Machine, Idler, Fetch];
 
 function FourthSection() {
 
   return (
     <>
       <div className='container-fourth-section'>
-        <div className='title-section'>
-        <h1 className='title-vinis'>VINIS EM</h1>
-        <h2 className='destaque'>Destaque</h2>
+        <div className='container-retangulo'>
+        <img className='retangulo' src={Retangulo} alt="" />
         </div>
+        <div className='top-section'>
+        </div>
+        <div className='title-fourth-section'>
+        <h1 className='title-fiona'>Fiona Apple</h1>
+        <h2 className='discografia'>DISCOGRAFIA</h2>
+        </div>
+        <div className='container-fiona'>
+        <img className='fiona' src={Fiona} alt="" />
+        </div>
+        <div className='swiper-fourth-section'>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -49,6 +56,7 @@ function FourthSection() {
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
       </div>
     </>
   )
