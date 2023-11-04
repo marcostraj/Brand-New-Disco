@@ -1,12 +1,12 @@
 import './ThirdSection.css'
-import Lush from './images/Lush.png'
-import Retired from './images/Retired.png'
-import Bury from './images/Bury Me.png'
-import Puberty from './images/Puberty 2.png'
-import Cowboy from './images/Be the Cowboy.png'
-import Laurel from './images/Laurel Hell.png'
-import Land from './images/The Land.png'
-import Mitski from './images/main mitski.png'
+import Lush from '../../../assets/images/Lush.png'
+import Retired from '../../../assets/images/Retired.png'
+import Bury from '../../../assets/images/Bury Me.png'
+import Puberty from '../../../assets/images/Puberty 2.png'
+import Cowboy from '../../../assets/images/Be the Cowboy.png'
+import Laurel from '../../../assets/images/Laurel Hell.png'
+import Land from '../../../assets/images/The Land.png'
+import Mitski from '../../../assets/images/main mitski.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -22,27 +22,30 @@ function ThirdSection() {
   return (
     <>
       <div className='container-third-section'>
-        <div className='section-top'>
-        <div className='title'>
-        <h1 className='title-third-section'>Mitski</h1>
-        <h2 className='subtitle-third-section'>DISCOGRAFIA</h2>
-        </div>
-        <img className="mitski" src={Mitski} alt="" />
+        <div className='cont'>
+          <div className='cont2'>
+          <h1 className='title-third-section'>Mitski</h1>
+          <h2 className='subtitle-third-section'>DISCOGRAFIA</h2>
+          </div>
+          <div>
+          <img className="mitski2" src={Mitski} alt="" />
+          </div>
         </div>
         <div className='swiper'>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={4}
+          slidesPerView={6}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 20,
             stretch: 0,
             depth: 100,
             modifier: 1,
             slideShadows: false,
           }}
-          pagination={true}
+          loop={true}
+          pagination={false}
           modules={[EffectCoverflow, Pagination]}
           className="slide"
         >

@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import Home from './components/main/Home/Home.tsx'
 import './index.css'
-import SecondSection from './SecondSection.tsx'
-import ThirdSection from './ThirdSection.tsx'
-import FourthSection from './FourthSection.tsx'
+import SecondSection from './components/main/SecondSection/SecondSection.tsx'
+import ThirdSection from './components/main/ThirdSection/ThirdSection.tsx'
+import FourthSection from './components/main/FourthSection/FourthSection.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <Home />
     <SecondSection />
     <ThirdSection/>
     <FourthSection/>
