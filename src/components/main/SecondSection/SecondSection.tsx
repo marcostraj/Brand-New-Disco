@@ -1,13 +1,13 @@
 import './SecondSection.css'
-import Vinil1 from './images/Happier than Ever.png'
-import Vinil2 from './images/Evermore.png'
-import Vinil3 from './images/This is Why.png'
-import Vinil4 from './images/Blue banisters.png'
-import Vinil5 from './images/Haim.png'
-import Vinil6 from './images/The Idler.png'
-import Vinil7 from './images/If i cant have love.png'
-import Vinil8 from './images/The Loneliest Time.png'
-import Vinil9 from './images/Bewithced.png'
+import Vinil1 from '../../../assets/images/Happier than Ever.png'
+import Vinil2 from '../../../assets/images/Evermore.png'
+import Vinil3 from '../../../assets/images/This is Why.png'
+import Vinil4 from '../../../assets/images/Blue banisters.png'
+import Vinil5 from '../../../assets/images/Haim.png'
+import Vinil6 from '../../../assets/images/The Idler.png'
+import Vinil7 from '../../../assets/images/If i cant have love.png'
+import Vinil8 from '../../../assets/images/The Loneliest Time.png'
+import Vinil9 from '../../../assets/images/Bewithced.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -31,15 +31,16 @@ function SecondSection() {
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={4}
+          slidesPerView={6}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 20,
             stretch: 0,
             depth: 100,
             modifier: 1,
             slideShadows: false,
           }}
-          pagination={true}
+          pagination={false}
+          loop={true}
           modules={[EffectCoverflow, Pagination]}
           className="slide"
         >
