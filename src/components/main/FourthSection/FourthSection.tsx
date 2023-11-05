@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const slides = [Tidal, Pawn, Machine, Idler, Fetch];
+const slides = [Machine, Idler, Fetch, Tidal, Pawn];
 
 function FourthSection() {
 

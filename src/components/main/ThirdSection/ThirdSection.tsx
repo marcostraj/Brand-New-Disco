@@ -15,7 +15,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const slides = [Lush, Retired, Bury, Puberty, Cowboy, Laurel, Land];
+const slides = [Bury, Puberty, Cowboy, Laurel, Land, Lush, Retired];
 
 function ThirdSection() {
 
