@@ -1,0 +1,111 @@
+.container-sixth-section{
+    justify-content: center;
+    background-color: #7E5843;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+}
+.title-pop{
+    bottom: 200px;
+    left: 300px;
+    color: #D1CFC9;
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.45px;
+}
+
+.container-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    position: absolute;
+    max-width: 1200px;
+    z-index: 0;
+    overflow: hidden;
+    top: 430px;
+    right: 200px;
+}
+
+.cont-title{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    right: -5px;
+    z-index: 1;
+}
+
+.cont-sixth-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-sixth-section{
+    width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.slide-sixth-section:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
+
+.images-sixth-section{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miley{
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 28%;
+}
+
+.taylor{
+    display: flex;
+    width: 50vh;
+    height: 80vh;
+    position: relative;
+    left: 250px;
+    justify-content: center;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.taylor:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
+
+
+@media screen and (max-width: 665px){
+    .slide-sixth-section{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 635px){
+
+    .title-sixth-section{
+        font-size: 64px;
+    }
+
+    .images-sixth-section{
+        height: 25vh;
+    }
+}
