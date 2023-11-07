@@ -9,7 +9,7 @@
     bottom: 200px;
     left: 300px;
     color: #D1CFC9;
-    text-align: center;
+    text-align: left;
     font-family: DM Serif Display;
     font-size: 94px;
     font-style: normal;
@@ -28,7 +28,7 @@
     max-width: 1200px;
     z-index: 0;
     overflow: hidden;
-    top: 430px;
+    top: 380px;
     right: 200px;
 }
 
@@ -41,13 +41,9 @@
     z-index: 1;
 }
 
-.cont-sixth-section{
-    display: flex;
-    flex-direction: row;
-}
-
 .slide-sixth-section{
-    width: 100%;
+    padding-top: 130px;
+    width: 90%;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -59,26 +55,39 @@
     transform: scale(1.05); 
 }
 
+
 .images-sixth-section{
-    width: 40%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
-.miley{
+.dua{
     position: absolute;
-    padding-top: 50px;
-    padding-left: 30px;
+    right: 180px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     width: 28%;
+    height: 20%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.dua:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
 }
 
 .taylor{
-    display: flex;
-    width: 50vh;
-    height: 80vh;
     position: relative;
-    left: 250px;
+    left: 160px;
+    top: 60px;
+    display: flex;
+    width: 23%;
+    height: 23%;
     justify-content: center;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -91,6 +100,40 @@
     transform: scale(1.05); 
 }
 
+.ariana{
+    display: flex;
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    right: 800px;
+    top: 550px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ariana:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
+
+.beyonce{
+    display: flex;
+    width: 20%;
+    height: 18%;
+    position: relative;
+    right: 580px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.beyonce:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
 
 @media screen and (max-width: 665px){
     .slide-sixth-section{

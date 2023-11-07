@@ -1,12 +1,26 @@
 import './SixthSection.css'
-import Midnights from '../../../assets/images/Midnights.png'
-import Plastic from '../../../assets/images/Plastic hearts.png'
-import Rosalia from '../../../assets/images/Rosalia.png'
+import Midnights from '../../../assets/images/Midnights2.png'
+import Nostalgia from '../../../assets/images/FutureNostalgia.png'
+import Swetenner from '../../../assets/images/Swetenner.png'
 import Desire from '../../../assets/images/Caroline.png'
-import Dua from '../../../assets/images/Component 13.png'
-import Miley from '../../../assets/images/Miley.png'
-import Beyonce from '../../../assets/images/Beyonce.png'
+import Sleep from '../../../assets/images/Billie.png'
+import Bangerz from '../../../assets/images/Bangerz.png'
+import Confesions from '../../../assets/images/Confesions.png'
+import Dangerous from '../../../assets/images/Dangerous.png'
+import Renaissance from '../../../assets/images/Beyonce.png'
+import Teenage from '../../../assets/images/Teenage.png'
+import Fame from '../../../assets/images/The Fame.png'
+import Anti from '../../../assets/images/ANTI.png'
+import Badland from '../../../assets/images/Badland.png'
+import Lover from '../../../assets/images/Lover.png'
+import Melodrama from '../../../assets/images/Melodrama (1).png'
+import Wonder from '../../../assets/images/Wonder.png'
+import Hours from '../../../assets/images/After Hours.png'
+import Romance from '../../../assets/images/Romance.png'
+import Dua from '../../../assets/images/Dua lipa.png'
 import Taylor from '../../../assets/images/Taylor.png'
+import Ariana from '../../../assets/images/Ariana3.jpg'
+import Beyonce from '../../../assets/images/Beyoncepop.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -15,7 +29,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const slides = [Midnights, Plastic, Desire, Dua, Rosalia, Beyonce, Plastic];
+const slides = [Midnights, Nostalgia, Swetenner, Desire, Sleep, Wonder, Confesions, Dangerous, Renaissance, Romance, Hours, Anti, Badland, Lover, Fame, Bangerz, Melodrama, Teenage];
 
 function SixthSection() {
 
@@ -27,10 +41,13 @@ function SixthSection() {
       </div>
         <div className='cont-sixth-section'>
         <div className='images-sixth-section'>
-            <div><img className='taylor' src={Taylor} alt="Cage" /></div>
-            <div className='cont-miley'><img  className='miley' src={Miley} alt="" /></div>
+            <img className='taylor' src={Taylor} alt="" />
+            <img  className='dua' src={Dua} alt="" />
+            <img  className='beyonce' src={Beyonce} alt="" />
+            <img  className='ariana' src={Ariana} alt="" />
         </div>
         <Swiper
+          effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={6}
