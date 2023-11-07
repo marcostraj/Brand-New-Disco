@@ -7,6 +7,8 @@ import ThirdSection from './components/main/ThirdSection/ThirdSection.tsx'
 import FourthSection from './components/main/FourthSection/FourthSection.tsx'
 import FifthSection from './components/main/FifthSection/FifthSection.tsx'
 import SixthSection from './components/main/SixthSection/SixthSection.tsx'
+import SeventhSection from './components/main/SeventhSection/SeventhSection.tsx'
+import Footer from './components/main/Footer/Footer.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -16,5 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <FourthSection/>
     <FifthSection/>
     <SixthSection/>
+    <SeventhSection/>
+    <Footer />
   </React.StrictMode>,
 )

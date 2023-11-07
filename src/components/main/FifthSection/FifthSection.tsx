@@ -8,6 +8,18 @@ import Album6 from '../../../assets/images/Bury Me.png'
 import Album7 from '../../../assets/images/I love you.png'
 import Album8 from '../../../assets/images/How big.png'
 import Album9 from '../../../assets/images/Blurryface.png'
+import Album10 from '../../../assets/images/AM.png'
+import Album11 from '../../../assets/images/Wiped out.png'
+import Album12 from '../../../assets/images/Catfish.png'
+import Album13 from '../../../assets/images/O my heart.png'
+import Album14 from '../../../assets/images/Zeros.png'
+import Album15 from '../../../assets/images/Look alive.png'
+import Album16 from '../../../assets/images/Daddys home.png'
+import Album17 from '../../../assets/images/The 1975.png'
+import Album18 from '../../../assets/images/Birthday.png'
+import Album19 from '../../../assets/images/The car.png'
+import Album20 from '../../../assets/images/Blue weekend.png'
+import Album21 from '../../../assets/images/Arquitetos.png'
 import Paramore from '../../../assets/images/Paramore.png'
 import Elephant from '../../../assets/images/Matt2.png'
 import Wolf from '../../../assets/images/Alice.png'
@@ -21,7 +33,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const slides = [Album1, Album2, Album3, Album4, Album5, Album9, Album6, Album7, Album8];
+const slides = [Album1, Album2, Album17, Album5, Album18, Album9, Album6, Album7, Album20, Album10, Album11, Album12, Album13, Album14, Album15, Album16, Album21, Album19, Album8, Album4, Album3];
 
 function FifthSection() {
 
