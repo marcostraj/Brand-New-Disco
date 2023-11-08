@@ -20,16 +20,17 @@
 
 .container-title{
     display: flex;
-    flex-direction: row;
+    padding: 30px;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 0px;
     position: absolute;
     max-width: 1200px;
-    z-index: 0;
+    z-index: 1;
     overflow: hidden;
     top: 380px;
-    right: 200px;
+    right: 150px;
 }
 
 .cont-title{
@@ -42,7 +43,7 @@
 }
 
 .slide-sixth-section{
-    padding-top: 130px;
+    padding-top: 30px;
     width: 90%;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -83,10 +84,8 @@
 
 .taylor{
     position: relative;
-    left: 160px;
-    top: 60px;
     display: flex;
-    width: 23%;
+    width: 80%;
     height: 23%;
     justify-content: center;
     -moz-transition: all 0.3s;
@@ -135,6 +134,41 @@
     transform: scale(1.05); 
 }
 
+@media screen and (max-width: 1040px){
+
+    .container-title{
+        top: 350px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .container-title{
+        top: 300px;
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    .container-title{
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 798px){
+
+    .container-title{
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 780px){
+
+    .container-title{
+        top: 50px;
+    }
+}
+
 @media screen and (max-width: 665px){
     .slide-sixth-section{
         width: 90%;
@@ -144,11 +178,7 @@
 
 @media screen and (max-width: 635px){
 
-    .title-sixth-section{
+    .title-pop{
         font-size: 64px;
-    }
-
-    .images-sixth-section{
-        height: 25vh;
     }
 }
