@@ -48,7 +48,9 @@ function SeventhSection() {
           ))}
         </Swiper>
         </div>
-        <h2 className='title-down'>SEUS ARTISTAS FAVORITOS EM UM SÓ LUGAR</h2>
+        <div className='cont-title-down'>
+          <h2 className='title-down'>SEUS ARTISTAS FAVORITOS EM UM SÓ LUGAR</h2>
+        </div>
       </div>
     </>
   )

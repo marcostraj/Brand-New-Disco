@@ -21,6 +21,7 @@ import Dua from '../../../assets/images/Dua lipa.png'
 import Taylor from '../../../assets/images/Taylor.png'
 import Ariana from '../../../assets/images/Ariana3.jpg'
 import Beyonce from '../../../assets/images/Beyoncepop.png'
+import Divas from '../../../assets/images/Divas.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -37,14 +38,12 @@ function SixthSection() {
     <>
       <div className='container-sixth-section'>
       <div className='container-title'>
-        <h1 className='title-pop'>Pop on <br></br>Top</h1>
+        <h2 className='title-pop'>Pop on</h2>
+        <h2 className='title-pop'>Top</h2>
       </div>
         <div className='cont-sixth-section'>
         <div className='images-sixth-section'>
-            <img className='taylor' src={Taylor} alt="" />
-            <img  className='dua' src={Dua} alt="" />
-            <img  className='beyonce' src={Beyonce} alt="" />
-            <img  className='ariana' src={Ariana} alt="" />
+            <img className='taylor' src={Divas} alt="" />
         </div>
         <Swiper
           effect={'coverflow'}

@@ -117,3 +117,15 @@ footer{
     justify-content: center;
     align-content: center;
 }
+
+@media screen and (max-width: 635px){
+
+    .title-footer{
+        font-size: 64px;
+    }
+
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
