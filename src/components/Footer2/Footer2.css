@@ -87,6 +87,7 @@ footer{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.16px;
+    padding-bottom: 30px;
 }
 
 .title-footer{
@@ -127,5 +128,30 @@ footer{
     .container-footer{
         display: flex;
         flex-direction: column;
+    }
+
+    .mapa{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .container-icons{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .entre-contato{
+        font-size: 16px;
+    }
+    
+    .redes{
+        font-size: 16px;
+    }
+
+    .dados{
+        font-size: 12px;
     }
 }

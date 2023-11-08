@@ -1,9 +1,9 @@
-import './Footer.css'
-import Map from '../../../assets/images/Map.png'
-import Icon1 from '../../../assets/images/🦆 icon _Alternate Phone_.png'
-import Icon2 from '../../../assets/images/🦆 icon _instagram alt_.png'
+import './Footer2.css'
+import Map from '../../assets/images/Map.png'
+import Icon1 from '../../assets/images/🦆 icon _Alternate Phone_.png'
+import Icon2 from '../../assets/images/🦆 icon _instagram alt_.png'
 
-function Footer() {
+function Footer2() {
 
   return (
     <>
@@ -42,4 +42,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer2
