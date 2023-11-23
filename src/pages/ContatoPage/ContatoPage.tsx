@@ -1,5 +1,6 @@
 import './ContatoPage.css'
 import Contato from '../../components/Contato/Contato'
+import Footer from '../../components/Footer2/Footer2'
 
 function ContatoPage() {
 
@@ -7,6 +8,7 @@ function ContatoPage() {
       <>
           <div>
             <Contato />
+            <Footer />
           </div>
       </>
     )
