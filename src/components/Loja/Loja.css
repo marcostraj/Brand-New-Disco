@@ -85,3 +85,69 @@
         font-size: 28px;
         color: #7E5843;
     }
+
+    .parecido{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      padding-left: 40px;
+    }
+
+    .parecido-texto{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .parecido-artista{
+      color: #7E5843;
+      font-family: Mitr;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.36px;
+    }
+
+    .parecido-titulo{
+      color: #7E5843;
+      font-family: Jura;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 11.64px;
+    }
+
+    .billie-img{
+      max-width: 80px;
+    }
+
+    .parecido-promo{
+      color: #D1CFC9;
+      font-family: DM Serif Display;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.92px;
+    }
+
+    .destaque-promo{
+      padding: 30px;
+      background-color: #553F33;
+  }
+
+  .parecido-texto-promo{
+    padding-left: 30px;
+  }
+
+  .parecido-titulo-promo{
+    color: #D1CFC9;
+    font-family: Jura;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 11.64px;
+  }

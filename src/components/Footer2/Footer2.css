@@ -46,6 +46,11 @@ footer{
     padding-top: 0px;
 }
 
+.map{
+    width: 100%;
+    height: 40vh;
+}
+
 .entre-contato{
     color: #D1CFC9;
     font-family: Jura;
