@@ -1,15 +1,32 @@
 import './Footer2.css'
-import Map from '../../assets/images/Map.png'
 import Icon1 from '../../assets/images/🦆 icon _Alternate Phone_.png'
 import Icon2 from '../../assets/images/🦆 icon _instagram alt_.png'
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 function Footer2() {
+
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyAnEPSXXqsRSQml8LY2Pos68aLn_IupBm8"
+  })
 
   return (
     <>
       <footer>
         <div className='container-footer'>
-            <img className='mapa' src={Map} alt="mapinha" />
+          <div className='map'>
+          {isLoaded ? (
+              <GoogleMap
+                mapContainerStyle={{width: '100%', height: '100%' }}
+                center={{
+                  lat: -22.121168, 
+                  lng: -51.408072
+                }}
+                zoom={15}
+              >
+              </GoogleMap>
+          ) : <></>}
+          </div>
           <div className='container-icons'>
             <h1 className='entre-contato'>
               ENTRE EM CONTATO CONOSCO

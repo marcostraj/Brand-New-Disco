@@ -1,13 +1,5 @@
 import './Loja.css'
-import Vinil1 from '../../assets/images/Happier than Ever.png'
-import Vinil2 from '../../assets/images/Evermore.png'
-import Vinil3 from '../../assets/images/This is Why.png'
-import Vinil4 from '../../assets/images/Blue banisters.png'
-import Vinil5 from '../../assets/images/Haim.png'
-import Vinil6 from '../../assets/images/The Idler.png'
-import Vinil7 from '../../assets/images/If i cant have love.png'
-import Vinil8 from '../../assets/images/The Loneliest Time.png'
-import Vinil9 from '../../assets/images/Bewithced.png'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -15,20 +7,20 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/effect-coverflow'
 import { EffectCoverflow, Pagination } from 'swiper/modules';
-import Vinil20 from '..//../assets/images/Brand new Eyes.png'
-import Vinil21 from '..//../assets/images/Garden.png'
-import Vinil22 from '..//../assets/images/Melodrama.png'
-import Vinil23 from '..//../assets/images/Titanic.png'
-import Vinil24 from '..//../assets/images/Blue weekend.png'
-import Vinil25 from '..//../assets/images/Norman.png'
-import Vinil26 from '..//../assets/images/Puberty 2.png'
-import Vinil27 from '..//../assets/images/Zeros.png'
-import Vinil28 from '..//../assets/images/Bury Me.png'
-
-const slides = [Vinil1, Vinil2, Vinil3, Vinil4, Vinil5, Vinil6, Vinil7, Vinil8, Vinil9];
-const slides2 = [Vinil20, Vinil21, Vinil22, Vinil23, Vinil24, Vinil25, Vinil26, Vinil27, Vinil28];
+import Billieicon from '../../assets/images/billieicon.png'
+import Lanaicon from '../../assets/images/lanaicon.png'
+import { slides1, slides2, slides3, slides4, slides5, slides6} from './data'
 
 function Loja() {
+
+  const [search, setSearch] = React.useState("")
+  const searchLowerCase = search.toLocaleLowerCase()
+  const slide1 = slides1.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
+  const slide2 = slides2.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
+  const slide3 = slides3.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
+  const slide4 = slides4.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
+  const slide5 = slides5.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
+  const slide6 = slides6.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
 
   return (
     <>
@@ -46,7 +38,7 @@ function Loja() {
         </div>
       </div>
       <div className='input-div'>
-        <input className='input-busca-loja' placeholder='Pesquise' type="text" />
+        <input className='input-busca-loja' value={search} placeholder='Pesquise' type='search' onChange={(e) => setSearch(e.target.value)}  />
       </div>
       <div className='destaque-loja'>
         <h2 className='destaque-titulo'>Destaques</h2>
@@ -67,7 +59,7 @@ function Loja() {
             modules={[EffectCoverflow, Pagination]}
             className="slide"
             >
-            {slides.map((item) => (
+            {slide1.map((item) => (
                 <SwiperSlide className="card">
                 <img className='card-img' src={item} alt="texto" />
                 </SwiperSlide>
@@ -93,7 +85,126 @@ function Loja() {
             modules={[EffectCoverflow, Pagination]}
             className="slide"
             >
-            {slides2.map((item) => (
+            {slide2.map((item) => (
+                <SwiperSlide className="card">
+                <img className='card-img' src={item} alt="texto" />
+                </SwiperSlide>
+            ))}
+            </Swiper>
+      </div>
+      <div className='destaque-loja'>
+        <div className='parecido'>
+          <img className='billie-img' src={Billieicon} alt="billie foto" />
+          <div className='parecido-texto'>
+          <h2 className='parecido-titulo'>PARECIDOS COM</h2>
+          <h3 className='parecido-artista'>Billie Eilish</h3>
+          </div>
+        </div>
+        <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={6}
+            coverflowEffect={{
+                rotate: 20,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            }}
+            pagination={false}
+            loop={true}
+            modules={[EffectCoverflow, Pagination]}
+            className="slide"
+            >
+            {slide3.map((item) => (
+                <SwiperSlide className="card">
+                <img className='card-img' src={item} alt="texto" />
+                </SwiperSlide>
+            ))}
+            </Swiper>
+      </div>
+      <div className='destaque-loja'>
+      <h2 className='destaque-titulo'>Melhores do R&B</h2>
+      <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={6}
+            coverflowEffect={{
+                rotate: 20,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            }}
+            pagination={false}
+            loop={true}
+            modules={[EffectCoverflow, Pagination]}
+            className="slide"
+            >
+            {slide4.map((item) => (
+                <SwiperSlide className="card">
+                <img className='card-img' src={item} alt="texto" />
+                </SwiperSlide>
+            ))}
+            </Swiper>
+      </div>
+      <div className='destaque-loja'>
+        <div className='parecido'>
+          <img className='billie-img' src={Lanaicon} alt="billie foto" />
+          <div className='parecido-texto'>
+          <h2 className='parecido-titulo'>PARA QUEM AMA</h2>
+          <h3 className='parecido-artista'>Lana Del Rey</h3>
+          </div>
+        </div>
+        <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={6}
+            coverflowEffect={{
+                rotate: 20,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            }}
+            pagination={false}
+            loop={true}
+            modules={[EffectCoverflow, Pagination]}
+            className="slide"
+            >
+            {slide5.map((item) => (
+                <SwiperSlide className="card">
+                <img className='card-img' src={item} alt="texto" />
+                </SwiperSlide>
+            ))}
+            </Swiper>
+      </div>
+      <div className='destaque-promo'>
+          <div className='parecido-texto-promo'>
+            <h2 className='parecido-titulo-promo'>VINIS EM</h2>
+            <h3 className='parecido-promo'>Promoção</h3>
+          </div>
+        <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={6}
+            coverflowEffect={{
+                rotate: 20,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            }}
+            pagination={false}
+            loop={true}
+            modules={[EffectCoverflow, Pagination]}
+            className="slide"
+            >
+            {slide6.map((item) => (
                 <SwiperSlide className="card">
                 <img className='card-img' src={item} alt="texto" />
                 </SwiperSlide>
