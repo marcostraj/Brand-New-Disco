@@ -1,4 +1,6 @@
+import Sobre from '../../Sobre/Sobre'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -9,9 +11,9 @@ function Home() {
           <h1 className='nav-title'>VINIS</h1>
           <div>
             <ul className='menu'>
-              <li className='menu-item'>Sobre nós</li>
-              <li className='menu-item'>Loja</li>
-              <li className='menu-item'>Contato</li>
+            <Link to="/loja"><li className="menu-item-loja">Loja</li></Link>
+              <Link to="sobre"><li className='menu-item'>Sobre nós</li></Link>
+              <Link to="contato"><li className='menu-item'>Contato</li></Link>
             </ul>
           </div>
         </div>
