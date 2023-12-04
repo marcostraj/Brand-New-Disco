@@ -6,6 +6,8 @@ import ContatoPage from './ContatoPage/ContatoPage.tsx'
 import SobrePage from './SobrePage/SobrePage.tsx'
 import LojaPage from './LojaPage/LojaPage.tsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Login from '../components/Login/Login.tsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Route path='/contato' element={<ContatoPage />} />
       <Route path='/sobre' element={<SobrePage />} />
       <Route path='/loja' element={<LojaPage />} />
+      <Route path='/login' element={<Login />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

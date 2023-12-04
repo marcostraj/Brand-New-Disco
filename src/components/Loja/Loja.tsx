@@ -10,6 +10,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Billieicon from '../../assets/images/billieicon.png'
 import Lanaicon from '../../assets/images/lanaicon.png'
 import { slides1, slides2, slides3, slides4, slides5, slides6} from './data'
+import { Link } from 'react-router-dom'
 
 function Loja() {
 
@@ -27,12 +28,12 @@ function Loja() {
       <div className='container-loja'>
       <div className="container-head-loja">
         <div className="navbar-loja">
-            <h1 className="nav-title-loja">VINIS</h1>
+        <Link to="/"><h1 className="nav-title-loja">VINIS</h1></Link>
             <div>
               <ul className="menu-loja">
-                <li className="menu-item-loja">Sobre nós</li>
-                <li className="menu-item-loja">Loja</li>
-                <li className="menu-item-loja">Contato</li>
+              <Link to="/loja"><li className="menu-item-loja">Loja</li></Link>
+                <Link to="/sobre"><li className="menu-item-loja">Sobre nós</li></Link>
+                <Link to="/contato"><li className="menu-item-loja">Contato</li></Link>
               </ul>
             </div>
         </div>
@@ -61,7 +62,7 @@ function Loja() {
             >
             {slide1.map((item) => (
                 <SwiperSlide className="card">
-                <img className='card-img' src={item} alt="texto" />
+                <Link to="/login"><img className='card-img' src={item} alt="texto" /></Link>
                 </SwiperSlide>
             ))}
             </Swiper>
@@ -87,7 +88,7 @@ function Loja() {
             >
             {slide2.map((item) => (
                 <SwiperSlide className="card">
-                <img className='card-img' src={item} alt="texto" />
+                <Link to="/login"><img className='card-img' src={item} alt="texto" /></Link>
                 </SwiperSlide>
             ))}
             </Swiper>
@@ -119,7 +120,7 @@ function Loja() {
             >
             {slide3.map((item) => (
                 <SwiperSlide className="card">
-                <img className='card-img' src={item} alt="texto" />
+                <Link to="/login"><img className='card-img' src={item} alt="texto" /></Link>
                 </SwiperSlide>
             ))}
             </Swiper>
@@ -145,7 +146,7 @@ function Loja() {
             >
             {slide4.map((item) => (
                 <SwiperSlide className="card">
-                <img className='card-img' src={item} alt="texto" />
+                <Link to="/login"><img className='card-img' src={item} alt="texto" /></Link>
                 </SwiperSlide>
             ))}
             </Swiper>
@@ -177,7 +178,7 @@ function Loja() {
             >
             {slide5.map((item) => (
                 <SwiperSlide className="card">
-                <img className='card-img' src={item} alt="texto" />
+                <Link to="/login"><img className='card-img' src={item} alt="texto" /></Link>
                 </SwiperSlide>
             ))}
             </Swiper>
@@ -206,7 +207,7 @@ function Loja() {
             >
             {slide6.map((item) => (
                 <SwiperSlide className="card">
-                <img className='card-img' src={item} alt="texto" />
+                <Link to="/login"><img className='card-img' src={item} alt="texto" /></Link>
                 </SwiperSlide>
             ))}
             </Swiper>

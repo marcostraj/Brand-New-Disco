@@ -3,6 +3,7 @@ import FundoVinil from '../../assets/images/imagemdisco2.png'
 import Gaby from '../../assets/images/Gaby.png'
 import Marcos from '../../assets/images/Marcos.png'
 import Footer2 from '../Footer2/Footer2'
+import { Link } from 'react-router-dom'
 
 
 function Sobre() {
@@ -12,12 +13,12 @@ function Sobre() {
     <div className='container-sobre'>
     <div className="container-head-sobre">
         <div className="navbar-sobre">
-            <h1 className="nav-title-sobrenos">VINIS</h1>
+            <Link to="/"><h1 className="nav-title-sobrenos">VINIS</h1></Link>
             <div>
               <ul className="menu-sobre">
-                <li className="menu-item-sobre">Sobre nós</li>
-                <li className="menu-item-sobre">Loja</li>
-                <li className="menu-item-sobre">Contato</li>
+              <Link to="/loja"><li className="menu-item-loja">Loja</li></Link>
+              <Link to="/sobre"><li className="menu-item-sobre">Sobre nós</li></Link>
+                <Link to="/contato"><li className="menu-item-sobre">Contato</li></Link>
               </ul>
             </div>
         </div>
