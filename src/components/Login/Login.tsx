@@ -1,9 +1,8 @@
 import './Login.css'
-import { useForm, SubmitHandler, useFormState } from "react-hook-form"
 import React, {useState, useCallback} from "react";
-import HomePage from '../../pages/HomePage/HomePage';
 import { Link } from 'react-router-dom';
 import Carrinho from '../Carrinho/Carrinho';
+import Footer2 from '../Footer2/Footer2';
 
 interface IFormState{
     email: string;
@@ -86,6 +85,7 @@ function Login() {
         </form>
         </div>
     </div>
+    <Footer2 />
     </>
   )
 }

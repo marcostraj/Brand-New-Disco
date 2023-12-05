@@ -1,10 +1,7 @@
 import './Carrinho.css'
-import { useForm, SubmitHandler, useFormState } from "react-hook-form"
 import React, {useState, useCallback} from "react";
-import HomePage from '../../pages/HomePage/HomePage';
 import { Link } from 'react-router-dom';
 import Final from '../Final/Final';
-import Footer from '../main/Footer/Footer';
 import Footer2 from '../Footer2/Footer2';
 
 interface IFormState{
@@ -73,7 +70,7 @@ function Carrinho() {
       </div>
     </div>
     <div className='container-informacoes'>
-        <h2 className='informacoes'>Antes de concluir sua compra, precisamos de algumas informações</h2>
+        <h2 className='informacoes'>Antes de concluir sua conta, precisamos de algumas informações</h2>
       </div>
     <div className='container-carrinho'>
         <div className='cont-carrinho'>

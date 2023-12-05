@@ -129,7 +129,7 @@
     .parecido-promo{
       color: #D1CFC9;
       font-family: DM Serif Display;
-      font-size: 64px;
+      font-size: 42px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -139,6 +139,7 @@
     .destaque-promo{
       padding: 30px;
       background-color: #553F33;
+      padding-bottom: 60px;
   }
 
   .parecido-texto-promo{
