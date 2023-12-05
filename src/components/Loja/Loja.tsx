@@ -1,5 +1,5 @@
 import './Loja.css'
-import React, { useState } from 'react'
+import React, { } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -17,11 +17,11 @@ function Loja() {
   const [search, setSearch] = React.useState("")
   const searchLowerCase = search.toLocaleLowerCase()
   const slide1 = slides1.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
-  const slide2 = slides2.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
-  const slide3 = slides3.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
-  const slide4 = slides4.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
-  const slide5 = slides5.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
-  const slide6 = slides6.filter(item => item.toLocaleLowerCase().includes(searchLowerCase))
+  const slide2 = slides2
+  const slide3 = slides3
+  const slide4 = slides4
+  const slide5 = slides5
+  const slide6 = slides6
 
   return (
     <>

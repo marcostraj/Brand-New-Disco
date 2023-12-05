@@ -42,7 +42,7 @@ import Look from '../../assets/images/Look alive.png'
 import Nightmare from '../../assets/images/Nightmare.png'
 import Wiped from '../../assets/images/Wiped out.png'
 
-export const slides1 = [Happier, Evermore, This, Blue, Women, Idler, If, Loneliest, Bewithced];
+export const slides1 = [Happier, Evermore, This, Women, Idler, If, Loneliest, Bewithced, Brand, Garden, Melodrama, Titanic, Weekend, Norman, Zeros, Bury, Pure, Ends, Superache, Did, Blood, Singular, Punisher, Fountain, Ctrl, Janelle, Raven, Bb, Sos, Red, Born, Ultraviolence, Honeymoon, Lust, Chemtrails, Did, How, Laurel, Look, Nightmare, Wiped, Puberty, If, Blue, Daddys];
 export const slides2 = [Brand, Garden, Melodrama, Titanic, Weekend, Norman, Puberty, Zeros, Bury];
 export const slides3 = [Pure, Ends, Superache, Did, Blood, Singular, Punisher];
 export const slides4 = [Fountain, Ctrl, Janelle, Raven, Bb, Sos, Red];
